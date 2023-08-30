@@ -290,6 +290,33 @@ h4:hover {
         padding: 6em 0 0 2em;
     }
 
+    .box-1 {
+        width: 100%;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: unset;
+    }
+
+    .box-2 {
+        width: 100%;
+        margin-top: -6em;
+        display: flex;
+        order: 1;
+        background: url(./images/bg-intro-mobile.svg) 100% no-repeat;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 1em 1.5em 0.5em;
+    }
+
     header button {
         display: none;
     }
@@ -297,6 +324,14 @@ h4:hover {
     .container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
+    }
+
+    #about {
+        padding: 2em 1.5em 5em;
+    }
+
+    #blog {
+        padding: 5em 1em;
     }
 
     .footer {
@@ -324,32 +359,10 @@ h4:hover {
         transform: scaleX(1);
     }
 
-    .hero {
-        flex-direction: column;
-    }
-
-    .box-1 {
-        width: 100%;
-        order: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: unset;
-    }
-
     .hero p {
         max-width: 350px;
     }
 
-    .box-2 {
-        width: 100%;
-        margin-top: -6em;
-        display: flex;
-        order: 1;
-        background: url(./images/bg-intro-mobile.svg) 100% no-repeat;
-    }
 
     #about,
     #blog {
