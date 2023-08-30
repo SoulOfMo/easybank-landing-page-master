@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Code](https://github.com/SoulOfMo/easybank-landing-page-master)
+- Live Site URL: [Live Site](https://soulofmo.github.io/easybank-landing-page-master/)
 
 ## My process
 
@@ -43,8 +43,7 @@ Users should be able to:
 - CSS Grid
 
 ### What I learned
-
-I was learnt how to use the ::after pusedo and transform properties to create an underline hhover effect.
+While continuing my journey of learning JavaScript, I utilized the project as an opportunity to refresh my understanding of CSS grid and various other CSS properties, such as the ::after pseudo-element and transform properties. These enabled me to create an underline hover effect.
 
 code snippets, see below:
 
@@ -70,7 +69,7 @@ li:hover::after {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Javascript
 
 ## Author
 
