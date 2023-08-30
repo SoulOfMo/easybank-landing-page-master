@@ -281,18 +281,23 @@ h4:hover {
 
 @media (max-width:775px) {
 
+    header {
+        padding: 1em 1.5em 0.5em;
+    }
+
+    header button {
+        display: none;
+    }
+
     .box-1,
     .box-2 {
         width: 50%;
     }
 
     .box-1 {
-        padding: 6em 0 0 2em;
-    }
-
-    .box-1 {
         width: 100%;
         order: 2;
+        padding: 6em 0 0 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -313,18 +318,6 @@ h4:hover {
         flex-direction: column;
     }
 
-    header {
-        padding: 1em 1.5em 0.5em;
-    }
-
-    header button {
-        display: none;
-    }
-
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1em;
-    }
 
     #about {
         padding: 2em 1.5em 5em;
@@ -334,8 +327,24 @@ h4:hover {
         padding: 5em 1em;
     }
 
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
     .footer {
         padding: 2em 3em;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .copyright button {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .copyright p {
+        text-align: center;
     }
 }
 
@@ -421,5 +430,9 @@ h4:hover {
 
     .copyright p {
         text-align: unset;
+    }
+
+    .copyright button {
+        width: 100%;
     }
 }
