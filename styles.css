@@ -35,7 +35,8 @@ body {
     font-size: 18px;
 }
 
-img {
+img,
+svg {
     display: block;
     max-width: 100%;
 }
@@ -93,6 +94,7 @@ header li::after {
 header li:hover::after {
     transform: scaleX(1);
     transform-origin: bottom center;
+    cursor: pointer;
 }
 
 a {
@@ -111,6 +113,7 @@ button {
 
 button:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .menu {
@@ -166,9 +169,10 @@ h1 {
 }
 
 .box-2 {
-    margin-top: -2.5em;
     width: 60%;
     background: url(./images/bg-intro-desktop.svg) no-repeat;
+    background-position-x: 5em;
+    background-position-y: -11em;
 }
 
 #about {
@@ -264,10 +268,19 @@ h4 {
     justify-content: space-between;
 }
 
+footer svg {
+    fill: var(--white);
+}
+
+footer svg:hover {
+    fill: var(--limegreen);
+}
+
 .footer li:hover,
 h4:hover {
     color: var(--limegreen);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .copyright p {
@@ -279,7 +292,7 @@ h4:hover {
 
 /* Tablet View */
 
-@media (max-width:775px) {
+@media (max-width:800px) {
 
     header {
         padding: 1em 1.5em 0.5em;
@@ -315,13 +328,12 @@ h4:hover {
         margin-top: -6em;
         display: flex;
         order: 1;
-        background: url(./images/bg-intro-mobile.svg) 100% no-repeat;
+        background-position: unset;
     }
 
     .hero {
         flex-direction: column;
     }
-
 
     #about {
         padding: 2em 1.5em 5em;
@@ -368,6 +380,10 @@ h4:hover {
         display: block;
     }
 
+    .box-2 {
+        background: url(./images/bg-intro-mobile.svg) 100% no-repeat;
+    }
+
     .dropdown-active {
         transform: scaleX(1);
     }
@@ -375,7 +391,6 @@ h4:hover {
     .hero p {
         max-width: 350px;
     }
-
 
     #about,
     #blog {
